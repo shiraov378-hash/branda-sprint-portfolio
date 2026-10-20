@@ -1,4 +1,4 @@
-/* טעינת פונט לאון מ-assets */
+/* טעינת פונט לאון מתיקיית assets */
 @font-face {
   font-family: 'Leon';
   src: url('assets/Leon-ProductRegular.woff2') format('woff2'),
@@ -101,31 +101,61 @@ body {
   line-height: 1.1;
 }
 
-/* מסגרת ברנדה ב-SVG ומספר 48 ברקע */
+/* מסגרת ברנדה ומספר 48 ברקע */
 .brand-frame-wrapper {
   position: relative;
   display: inline-block;
-  margin-top: 15px;
-}
-
-.brand-svg-img {
-  width: 380px;
-  height: auto;
-  position: relative;
-  z-index: 2;
-  display: block;
+  margin-top: 20px;
 }
 
 .bg-number-48-hero {
   position: absolute;
   bottom: -45px;
-  right: -25px;
-  font-size: 14rem;
+  right: 10px;
+  font-size: 13rem;
   font-weight: 900;
   color: rgba(255, 255, 255, 0.32);
   z-index: 1;
   line-height: 1;
   pointer-events: none;
+}
+
+.brand-frame-box {
+  position: relative;
+  z-index: 2;
+  border: 2px solid #2a1b4e;
+  padding: 8px 45px;
+  background-color: transparent;
+  display: inline-block;
+}
+
+.brand-text {
+  font-size: 5.5rem;
+  font-weight: 900;
+  color: #11c2b2;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.corner-dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: #ffffff;
+  border: 1px solid #2a1b4e;
+}
+.corner-dot.tl { top: -4px; left: -4px; }
+.corner-dot.tr { top: -4px; right: -4px; }
+.corner-dot.bl { bottom: -4px; left: -4px; }
+.corner-dot.br { bottom: -4px; right: -4px; }
+
+.cursor-icon {
+  position: absolute;
+  bottom: -22px;
+  left: 25px;
+  font-size: 1.3rem;
+  color: #2a1b4e;
+  transform: rotate(-30deg);
 }
 
 /* בסיס לבן תחתון */
@@ -145,10 +175,10 @@ body {
 .hero-character-wrapper {
   position: absolute;
   bottom: 0;
-  left: 40px;
+  left: 50px;
   z-index: 5;
-  width: 310px;
-  height: 240px;
+  width: 320px;
+  height: 250px;
 }
 
 .hero-main-body {
@@ -161,9 +191,9 @@ body {
 
 .hero-animated-hand {
   position: absolute;
-  top: 32px;
-  right: 48px;
-  width: 75px;
+  top: 38px;
+  right: 50px;
+  width: 78px;
   height: auto;
   transform-origin: bottom center;
   animation: waveHand 2.2s infinite ease-in-out;
@@ -182,7 +212,7 @@ body {
 .brand-sub-title {
   display: flex;
   flex-direction: column;
-  margin-left: 350px;
+  margin-left: 370px;
 }
 
 .brand-name-en {
