@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 379.76 86.12">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .14em;
+      }
+
+      .cls-2 {
+        letter-spacing: .14em;
+      }
+
+      .cls-3 {
+        letter-spacing: .1em;
+      }
+
+      .cls-4 {
+        letter-spacing: .14em;
+      }
+
+      .cls-5 {
+        letter-spacing: .13em;
+      }
+
+      .cls-6 {
+        fill: #121212;
+        font-family: BCCivitas-Bold, 'BC Civitas';
+        font-size: 39.22px;
+        font-weight: 700;
+      }
+
+      .cls-7 {
+        letter-spacing: .02em;
+      }
+
+      .cls-8 {
+        letter-spacing: .13em;
+      }
+
+      .cls-9 {
+        fill: #06b1b3;
+        font-family: FbEleganti-Regular, 'Fb Eleganti';
+        font-size: 29.42px;
+      }
+    </style>
+  </defs>
+  <text class="cls-6" transform="translate(7.88 39.77)"><tspan class="cls-1" x="0" y="0">B</tspan><tspan class="cls-5" x="31.1" y="0">R</tspan><tspan class="cls-2" x="62.29" y="0">AN</tspan><tspan class="cls-3" x="126.89" y="0">D</tspan><tspan class="cls-8" x="158.46" y="0">A</tspan><tspan class="cls-4" x="188.47" y="0" xml:space="preserve"> SPRIN</tspan><tspan class="cls-7" x="342.81" y="0">T</tspan></text>
+  <text class="cls-9" transform="translate(64.24 70.68)"><tspan x="0" y="0">מעצבים לעסקים ביומיים</tspan></text>
+</svg>
