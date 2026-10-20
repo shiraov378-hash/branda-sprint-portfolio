@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Branda Sprint - תיק עבודות</title>
+  <title>Branda Sprint - קטלוג מוצרים</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,8 @@
   <!-- סרגל עליון -->
   <header class="top-bar">
     <div class="brand-logo-wrapper">
-      <img src="assets/sprint-logo.svg" alt="Sprint Logo" class="brand-logo">
+      <!-- שימוש בשם הקובץ המדויק מהתיקייה עם הסיומת הכפולות -->
+      <img src="assets/sprint-logo.svg.svg" alt="Sprint" class="brand-logo">
     </div>
     <div class="tagline-strip">
       מיתוג • עיצוב מודעות • קטלוגים • דפי נחיתה ודיגיטל • האימפקט המהיר לעסק שלך ב-48 שעות
@@ -21,24 +22,27 @@
   <!-- אזור 1: Hero Section -->
   <section class="hero-container">
     
-    <!-- קו ספירלה מעוצב ברקע -->
-    <svg class="hero-bg-spiral" viewBox="0 0 1000 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- ספירלת רקע -->
+    <svg class="hero-bg-spiral" viewBox="0 0 1000 300" fill="none">
       <path d="M 0 150 Q 250 80, 500 150 T 800 120 C 830 80, 880 80, 890 120 C 900 160, 850 180, 830 140 C 820 100, 870 50, 1000 100" stroke="rgba(255, 255, 255, 0.45)" stroke-width="4" fill="none" />
     </svg>
 
-    <!-- דמות ספרינט הראשית (בצד שמאל) -->
+    <!-- דמות ספרינט (בצד שמאל) עם השם המדויק מהתיקייה -->
     <div class="hero-character-wrapper">
-      <img src="assets/hero-character-body.png" alt="דמות ספרינט" class="hero-main-char">
+      <img src="assets/hero-character-body.png.png" alt="דמות ספרינט" class="hero-main-char">
     </div>
 
     <!-- תוכן וטקסטים מרכזיים (בצד ימין) -->
     <div class="hero-content">
-      <h1 class="hero-title">
+      <div class="hero-title">
         <span class="title-small">קטלוג</span>
         <span class="title-large">המוצרים של</span>
-      </h1>
+      </div>
 
       <div class="brand-frame-wrapper">
+        <!-- מספר 48 שקוף ברקע -->
+        <span class="bg-number-48-hero">48</span>
+        
         <div class="brand-frame-box">
           <span class="brand-text">ברנדה</span>
           <span class="corner-dot tl"></span>
@@ -59,15 +63,15 @@
 
       <div class="hero-stats-cards">
         <div class="stat-card">
-          <span class="stat-num">236+</span>
+          <span class="stat-num" data-target="236">0</span><span class="stat-plus">+</span>
           <span class="stat-text">לקוחות שבחרו ספרינט</span>
         </div>
         <div class="stat-card">
-          <span class="stat-num">9+</span>
+          <span class="stat-num" data-target="9">0</span><span class="stat-plus">+</span>
           <span class="stat-text">שנות ניסיון ומיומנות</span>
         </div>
         <div class="stat-card highlight">
-          <span class="stat-num">8.5M</span>
+          <span class="stat-num-static">8.5M</span>
           <span class="stat-text">פיקסלים שדויקו לשלמות</span>
         </div>
       </div>
@@ -75,73 +79,27 @@
 
   </section>
 
-  <!-- אזור 2: מיתוג ב-48 שעות -->
-  <section class="branding-section">
-    <div class="branding-container">
-      
-      <!-- פס צד שמאלי מעוצב -->
-      <div class="side-banner">
-        <div class="yellow-stripe"></div>
-        <div class="cyan-area">
-          <svg class="spiral-icon" viewBox="0 0 100 100">
-            <path d="M10,50 Q30,10 50,50 T90,50" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.6"/>
-          </svg>
-        </div>
-      </div>
-
-      <!-- תוכן מרכזי -->
-      <div class="branding-content">
-        
-        <!-- תגיות עליונות -->
-        <div class="top-tags">
-          <span class="tag tag-cyan">■ מהירות</span>
-          <span class="tag tag-purple">■ דיוק</span>
-          <span class="tag tag-yellow">■ איכות</span>
-        </div>
-
-        <!-- כותרת ראשית ורקע 48 -->
-        <div class="branding-header">
-          <span class="bg-number-48">48</span>
-          <h2 class="main-branding-title">מיתוג ב-48 שעות:</h2>
-          <p class="sub-branding-title">זהות מותג חדה. בזמן שיא.</p>
-        </div>
-
-        <!-- שלבי התהליך (3 עמודות) -->
-        <div class="process-steps">
-          
-          <div class="step-card">
-            <div class="check-icon">✓</div>
-            <h3 class="step-title">שיחת פיצוח קצרה ומילוי שאלון ממוקד.</h3>
-            <p class="step-desc">מבינים את היעדים, מחדדים את המסר ומגדירים את כיוון העיצוב המדויק.</p>
-          </div>
-
-          <div class="step-card">
-            <div class="check-icon">✓</div>
-            <h3 class="step-title">הצגת סקיצות מובילות לבחירה.</h3>
-            <p class="step-desc">מדייקים את הלוגו הנבחר ומתקדמים לתוצר הסופי.</p>
-          </div>
-
-          <div class="step-card">
-            <div class="check-icon">✓</div>
-            <h3 class="step-title">הלוגו שלכם מוכן לשימוש</h3>
-            <p class="step-desc">מקבלים את כל קבצי המקור והתוצרים, מוכנים להזניק את העסק קדימה.</p>
-          </div>
-
-        </div>
-
-        <!-- פסקת סיכום וכיתוב -->
-        <div class="branding-footer">
-          <p class="package-details">
-            חבילת המיתוג ב-48 שעות כוללת: עיצוב לוגו מקצועי, פלטת צבעים ושפה עיצובית, חתימת מייל מעוצבת, עיצוב כרטיס ביקור.
-          </p>
-          <p class="handwritten-note">מוכנים להזניק את המותג שלכם?</p>
-          <span class="section-index">1. מיתוג</span>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
+  <!-- אנימציה להרצת המספרים -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll('.stat-num');
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        let count = 0;
+        const speed = target / 50;
+        const updateCount = () => {
+          count += speed;
+          if (count < target) {
+            counter.innerText = Math.ceil(count);
+            setTimeout(updateCount, 30);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      });
+    });
+  </script>
 
 </body>
 </html>
