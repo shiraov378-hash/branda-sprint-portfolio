@@ -43,89 +43,175 @@ body {
    ========================================== */
 .hero-container {
   position: relative;
-  background-color: #ffcc00;
-  border-radius: 24px;
+  background-color: #f1c40f;
+  border-radius: 28px;
   margin: 20px auto;
   max-width: 1200px;
-  padding: 60px 40px;
+  min-height: 520px;
+  padding: 40px 50px 30px 50px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  direction: rtl;
 }
 
-.hero-background-line {
+.hero-bg-spiral {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 200px;
   z-index: 1;
   pointer-events: none;
 }
 
-.hero-character {
+.hero-character-wrapper {
   position: absolute;
-  bottom: 0;
-  right: 50px;
-  width: 320px;
-  z-index: 2;
+  bottom: 60px;
+  right: 40px;
+  z-index: 3;
+}
+
+.hero-main-char {
+  width: 330px;
+  height: auto;
+  display: block;
 }
 
 .hero-content {
   position: relative;
-  z-index: 3;
-  margin-right: 380px;
+  z-index: 4;
+  margin-right: auto;
+  margin-left: 60px;
+  text-align: left;
+  margin-top: 20px;
 }
 
-.hero-title-main {
-  font-size: 3.5rem;
-  font-weight: 900;
-  color: #6b2d5c;
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #3b2c58;
+  margin-bottom: 15px;
+}
+
+.title-small {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.title-large {
+  font-size: 2.8rem;
+  font-weight: 800;
   line-height: 1.1;
 }
 
-.hero-title-sub {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: #222222;
-  margin-bottom: 20px;
-}
-
-.hero-frame-box {
-  border: 3px dashed #17c3b2;
-  padding: 15px 30px;
-  display: inline-block;
-  border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.hero-frame-text {
-  font-size: 4rem;
-  font-weight: 900;
-  color: #17c3b2;
-}
-
-/* סטריפ נתונים סטטיסטי במעברון */
-.stats-strip {
+.brand-frame-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+}
+
+.brand-frame-box {
+  position: relative;
+  border: 2px solid #2b1e4a;
+  padding: 10px 35px;
+  background-color: transparent;
+  display: inline-block;
+}
+
+.brand-text {
+  font-size: 4.8rem;
+  font-weight: 900;
+  color: #2b1e4a;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.corner-dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
   background-color: #17c3b2;
-  color: #ffffff;
-  padding: 20px;
-  border-radius: 16px;
+  border: 1px solid #2b1e4a;
+}
+.corner-dot.tl { top: -4px; left: -4px; }
+.corner-dot.tr { top: -4px; right: -4px; }
+.corner-dot.bl { bottom: -4px; left: -4px; }
+.corner-dot.br { bottom: -4px; right: -4px; }
+
+.cursor-icon {
+  position: absolute;
+  bottom: -18px;
+  left: 20px;
+  font-size: 1.2rem;
+  color: #2b1e4a;
+  transform: rotate(-30deg);
+}
+
+.hero-bottom-bar {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-top: 40px;
 }
 
-.stat-item {
-  text-align: center;
+.brand-sub-title {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 340px;
 }
 
-.stat-number {
-  font-size: 2.2rem;
+.brand-name-en {
+  font-size: 1.6rem;
   font-weight: 900;
+  color: #2b1e4a;
+  letter-spacing: 2px;
 }
 
-.stat-label {
-  font-size: 0.9rem;
+.brand-tagline-he {
+  font-size: 1.1rem;
+  color: #17c3b2;
+  font-weight: 700;
+}
+
+.hero-stats-cards {
+  display: flex;
+  gap: 12px;
+  background-color: #17c3b2;
+  padding: 8px 12px;
+  border-radius: 18px;
+}
+
+.stat-card {
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 10px 18px;
+  border-radius: 14px;
+  text-align: center;
+  color: #ffffff;
+  min-width: 110px;
+}
+
+.stat-card.highlight {
+  background-color: #ffffff;
+  color: #17c3b2;
+}
+
+.stat-num {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.stat-text {
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 /* ==========================================
@@ -148,7 +234,6 @@ body {
   background-color: #faf9f6;
 }
 
-/* פס צד שמאלי */
 .side-banner {
   display: flex;
   width: 200px;
@@ -174,7 +259,6 @@ body {
   height: auto;
 }
 
-/* תוכן מרכזי */
 .branding-content {
   flex: 1;
   padding: 40px 50px;
@@ -184,7 +268,6 @@ body {
   justify-content: space-between;
 }
 
-/* תגיות עליונות */
 .top-tags {
   display: flex;
   gap: 25px;
@@ -198,7 +281,6 @@ body {
 .tag-purple { color: #6b2d5c; }
 .tag-yellow { color: #ffcc00; }
 
-/* כותרת ורקע 48 */
 .branding-header {
   position: relative;
   margin-bottom: 40px;
@@ -232,7 +314,6 @@ body {
   z-index: 2;
 }
 
-/* שלבים (3 עמודות) */
 .process-steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -272,7 +353,6 @@ body {
   line-height: 1.5;
 }
 
-/* חלק תחתון */
 .branding-footer {
   border-top: 1px solid #e5e5e5;
   padding-top: 20px;
