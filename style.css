@@ -1,4 +1,4 @@
-/* טעינת פונט לאון לפי שמות הקבצים המדויקים ב-assets */
+/* טעינת פונט לאון מ-assets */
 @font-face {
   font-family: 'Leon';
   src: url('assets/Leon-ProductRegular.woff2') format('woff2'),
@@ -33,7 +33,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 50px;
+  padding: 15px 60px;
   background-color: #ffffff;
 }
 
@@ -48,14 +48,14 @@ body {
   font-weight: 600;
 }
 
-/* אזור Hero מרכזי */
+/* אזור Hero */
 .hero-container {
   position: relative;
   background-color: #f2c010;
   border-radius: 36px;
   margin: 20px auto;
   max-width: 1200px;
-  min-height: 560px;
+  min-height: 580px;
   padding: 50px 60px 0 60px;
   overflow: hidden;
   display: flex;
@@ -74,19 +74,18 @@ body {
   pointer-events: none;
 }
 
-/* חלק עליון של התוכן - בצד שמאל/מרכז */
+/* תוכן טקסטים בצד ימין */
 .hero-content {
   position: relative;
   z-index: 4;
-  text-align: left;
-  margin-left: 60px;
+  text-align: right;
   margin-top: 10px;
 }
 
 .hero-title {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   color: #2a1b4e;
 }
 
@@ -102,61 +101,30 @@ body {
   line-height: 1.1;
 }
 
-/* תיבת ברנדה ומספר 48 שקוף ברקע */
+/* מסגרת ברנדה ב-SVG ומספר 48 ברקע */
 .brand-frame-wrapper {
   position: relative;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 10px;
+}
+
+.brand-svg-img {
+  width: 320px;
+  height: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .bg-number-48-hero {
   position: absolute;
-  bottom: -45px;
-  right: -30px;
+  bottom: -40px;
+  right: -20px;
   font-size: 13rem;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.28);
+  color: rgba(255, 255, 255, 0.32);
   z-index: 1;
   line-height: 1;
   pointer-events: none;
-}
-
-.brand-frame-box {
-  position: relative;
-  z-index: 2;
-  border: 2px solid #2a1b4e;
-  padding: 6px 40px;
-  background-color: transparent;
-  display: inline-block;
-}
-
-.brand-text {
-  font-size: 6rem;
-  font-weight: 900;
-  color: #11c2b2;
-  letter-spacing: 1px;
-  line-height: 1;
-}
-
-.corner-dot {
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  background-color: #ffffff;
-  border: 1px solid #2a1b4e;
-}
-.corner-dot.tl { top: -4px; left: -4px; }
-.corner-dot.tr { top: -4px; right: -4px; }
-.corner-dot.bl { bottom: -4px; left: -4px; }
-.corner-dot.br { bottom: -4px; right: -4px; }
-
-.cursor-icon {
-  position: absolute;
-  bottom: -22px;
-  left: 25px;
-  font-size: 1.3rem;
-  color: #2a1b4e;
-  transform: rotate(-30deg);
 }
 
 /* בסיס לבן תחתון */
@@ -164,52 +132,74 @@ body {
   position: relative;
   z-index: 4;
   background-color: #ffffff;
-  border-radius: 24px 24px 0 0;
-  padding: 15px 30px;
+  border-radius: 28px 28px 0 0;
+  padding: 18px 35px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 40px;
 }
 
+/* דמות ספרינט מוגדלת + אנימציית יד */
 .hero-character-wrapper {
   position: absolute;
   bottom: 0;
-  right: 20px;
+  left: 30px;
   z-index: 5;
+  width: 380px;
 }
 
-.hero-main-char {
-  width: 320px;
+.hero-main-body {
+  width: 100%;
   height: auto;
   display: block;
+}
+
+.hero-animated-hand {
+  position: absolute;
+  top: 15%;
+  right: 18%;
+  width: 85px;
+  height: auto;
+  transform-origin: bottom center;
+  animation: waveHand 2.5s infinite ease-in-out;
+}
+
+/* אנימציית נפנוף ליד */
+@keyframes waveHand {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
 }
 
 .brand-sub-title {
   display: flex;
   flex-direction: column;
-  margin-right: 320px; /* מפנה מקום לדמות */
+  margin-left: 360px; /* מפנה מקום לדמות המוגדלת משמאל */
 }
 
 .brand-name-en {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 900;
   color: #2a1b4e;
   letter-spacing: 2px;
 }
 
 .brand-tagline-he {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: #11c2b2;
   font-weight: 800;
 }
 
-/* תיבת הסטטיסטיקה בתכלת בצד שמאל */
+/* תיבת סטטיסטיקה בתכלת בצד שמאל */
 .hero-stats-box {
   display: flex;
   background-color: #11c2b2;
   border-radius: 18px;
-  padding: 8px 12px;
+  padding: 8px 14px;
   gap: 15px;
 }
 
