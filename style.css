@@ -1,1 +1,226 @@
+/* הגדרות בסיס */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+body {
+  background-color: #faf9f6;
+  color: #222;
+}
+
+/* סרגל עליון */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.brand-logo {
+  width: 110px;
+  height: auto;
+}
+
+.tagline-strip {
+  font-size: 0.95rem;
+  color: #444;
+  font-weight: 500;
+}
+
+/* אזור ה-Hero הראשי */
+.hero-container {
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero-card {
+  position: relative;
+  background-color: #ffcc00; /* הרקע הצהוב המאפיין */
+  border-radius: 30px;
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+/* רקע מפותל */
+.bg-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+/* אזור טקסט ומסגרת */
+.hero-text-area {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.sub-heading {
+  font-size: 2.2rem;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.brand-frame-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+}
+
+.brand-title-img {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+.bounding-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  animation: pulse-frame 2s infinite ease-in-out;
+}
+
+.cursor-arrow {
+  position: absolute;
+  bottom: -5px;
+  left: 10px;
+  width: 24px;
+  animation: move-cursor 3s infinite ease-in-out;
+}
+
+/* אזור הדמות */
+.character-wrapper {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  z-index: 2;
+}
+
+.char-body {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.char-arm {
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  width: 35%;
+  transform-origin: bottom left;
+  animation: wave 2s infinite ease-in-out;
+}
+
+.char-hand {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  width: 25%;
+}
+
+.char-sparks {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 20%;
+  animation: pulse 1.5s infinite alternate;
+}
+
+/* רצועה תחתונה */
+.hero-footer-strip {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  padding-top: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-logo {
+  width: 140px;
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.stats-boxes {
+  display: flex;
+  gap: 30px;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* אנימציות */
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(14deg); }
+  40% { transform: rotate(-8deg); }
+  60% { transform: rotate(14deg); }
+  80% { transform: rotate(-4deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1.1); }
+}
+
+@keyframes pulse-frame {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.02); opacity: 1; }
+}
+
+@keyframes move-cursor {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(15px, -10px); }
+}
