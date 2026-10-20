@@ -105,21 +105,22 @@ body {
 .brand-frame-wrapper {
   position: relative;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .brand-svg-img {
-  width: 320px;
+  width: 380px;
   height: auto;
   position: relative;
   z-index: 2;
+  display: block;
 }
 
 .bg-number-48-hero {
   position: absolute;
-  bottom: -40px;
-  right: -20px;
-  font-size: 13rem;
+  bottom: -45px;
+  right: -25px;
+  font-size: 14rem;
   font-weight: 900;
   color: rgba(255, 255, 255, 0.32);
   z-index: 1;
@@ -140,29 +141,32 @@ body {
   margin-top: 40px;
 }
 
-/* דמות ספרינט מוגדלת + אנימציית יד */
+/* דמות ספרינט מוגדלת + יד מונפשת במדויק */
 .hero-character-wrapper {
   position: absolute;
   bottom: 0;
-  left: 30px;
+  left: 40px;
   z-index: 5;
-  width: 380px;
+  width: 310px;
+  height: 240px;
 }
 
 .hero-main-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: auto;
-  display: block;
 }
 
 .hero-animated-hand {
   position: absolute;
-  top: 15%;
-  right: 18%;
-  width: 85px;
+  top: 32px;
+  right: 48px;
+  width: 75px;
   height: auto;
   transform-origin: bottom center;
-  animation: waveHand 2.5s infinite ease-in-out;
+  animation: waveHand 2.2s infinite ease-in-out;
 }
 
 /* אנימציית נפנוף ליד */
@@ -171,14 +175,14 @@ body {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(12deg);
+    transform: rotate(14deg);
   }
 }
 
 .brand-sub-title {
   display: flex;
   flex-direction: column;
-  margin-left: 360px; /* מפנה מקום לדמות המוגדלת משמאל */
+  margin-left: 350px;
 }
 
 .brand-name-en {
