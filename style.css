@@ -37,9 +37,15 @@ body {
   background-color: #ffffff;
 }
 
+.brand-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .brand-logo {
-  height: 42px;
+  height: 38px;
   width: auto;
+  display: block;
 }
 
 .tagline-strip {
