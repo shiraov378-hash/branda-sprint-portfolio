@@ -1,9 +1,17 @@
-/* טעינת פונט לאון (ודאי שקובץ הפונט הועלה ל-assets) */
+/* טעינת פונט לאון לפי שמות הקבצים המדויקים ב-assets */
 @font-face {
   font-family: 'Leon';
-  src: url('assets/Leon.ttf') format('truetype'),
-       url('assets/Leon.woff2') format('woff2');
+  src: url('assets/Leon-ProductRegular.woff2') format('woff2'),
+       url('assets/Leon-ProductRegular.woff') format('woff');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Leon';
+  src: url('assets/Leon-ProductHeavy.woff2') format('woff2'),
+       url('assets/Leon-ProductHeavy.woff') format('woff');
+  font-weight: 900;
   font-style: normal;
 }
 
